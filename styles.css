@@ -10,3 +10,7 @@ html {
   color: #fafafa;
   font-family: "Barlow Condensed", Verdana, Arial, Tahoma, sans-serif;
 }
+
+.links-hover:hover {
+  border-bottom: #fafafa 1px solid;
+}
