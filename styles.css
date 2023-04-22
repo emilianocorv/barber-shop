@@ -5,12 +5,51 @@
   background-color: #121519;
 }
 
+body {
+  background-color: #121519;
+}
+
 html {
   background-color: #121519;
   color: #fafafa;
   font-family: "Barlow Condensed", Verdana, Arial, Tahoma, sans-serif;
+  scroll-behavior: smooth;
 }
 
 .links-hover:hover {
   border-bottom: #fafafa 1px solid;
+}
+
+.header-fix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  opacity: .9;
+  transition: opacity 0.3s ease-in-out;
+  max-height: 105px;
+}
+
+.fix-white-spaces {
+  min-width: 100%;
+  background-color: #121519;
+}
+
+.cont {
+  height: 100vh;
+  background-color: lightskyblue;
+  border: 1px solid white;
+}
+
+.first {
+  margin-top: 105px;
+}
+
+.main-font {
+  font-family: "Barlow Condensed", Verdana, Arial, Tahoma, sans-serif;
+}
+
+.section-servicios{
+    min-height: 100vh;
+    padding-top: 20px;
 }
