@@ -27,7 +27,7 @@ html {
   right: 0;
   opacity: .9;
   transition: opacity 0.3s ease-in-out;
-  max-height: 105px;
+  max-height: 110px;
 }
 
 .fix-white-spaces {
@@ -42,13 +42,15 @@ html {
 }
 
 .first {
-  margin-top: 105px;
+  margin-top: 110px;
 }
 
 .main-font {
   font-family: "Barlow Condensed", Verdana, Arial, Tahoma, sans-serif;
 }
-
+.responsive-font{
+  font-size: 1.3rem;
+}
 .section-servicios{
     min-height: 100vh;
     padding-top: 20px;
