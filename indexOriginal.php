@@ -23,6 +23,7 @@
     />
     <title>Barber Shop</title>
   </head>
+
   <body>
     <header>
       <div class="container">
@@ -49,29 +50,24 @@
               >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-white  links-hover"
-                >Servicios</a
-              >
+              <a href="servicios.php" class="nav-link text-white links-hover">Servicios</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-white  links-hover"
-                >Turnos</a
-              >
+              <a href="#" class="nav-link text-white links-hover">Turnos</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-white  links-hover"
+              <a href="#" class="nav-link text-white links-hover"
                 >Nuestros trabajos</a
               >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-white links-hover"
-                >Contacto</a
-              >
+              <a href="#" class="nav-link text-white links-hover">Contacto</a>
             </li>
           </ul>
         </header>
       </div>
     </header>
+    
     <section class="container-fluid" style="min-height: 100vh">
       <div class="container col-xxl-8 px-4 first">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
@@ -106,13 +102,12 @@
         </div>
       </div>
     </section>
-    <section class="container-fluid main-font section-servicios bg-dark.bg-gradient">
-      <h2 class="bg-dark.bg-gradient text-white">Servicios</h2>
-    </section>
-    <div class="col12 cont">hola mundo</div>
-    <div class="col12 cont"></div>
-    <div class="col12 cont"></div>
-    <div class="col12 cont"></div>
+   
+    <footer class="container-fluid">
+      <h6 class="text-center text-light">Corvalan - Barzizza - Limachi - IFTS4</h6>
+    </footer>
+
+
     <script src="script.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"

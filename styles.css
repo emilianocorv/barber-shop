@@ -5,7 +5,7 @@
   background-color: #121519;
 }
 
-body {
+body, #background {
   background-color: #121519;
 }
 
@@ -25,7 +25,7 @@ html {
   top: 0;
   left: 0;
   right: 0;
-  opacity: .9;
+  opacity: 0.9;
   transition: opacity 0.3s ease-in-out;
   max-height: 110px;
 }
@@ -48,10 +48,28 @@ html {
 .main-font {
   font-family: "Barlow Condensed", Verdana, Arial, Tahoma, sans-serif;
 }
-.responsive-font{
+.responsive-font {
   font-size: 1.3rem;
 }
-.section-servicios{
-    min-height: 100vh;
-    padding-top: 20px;
+.section-servicios {
+  min-height: 100vh;
+  padding-top: 20px;
+}
+
+/* Turnos */
+
+label{
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Footer */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  min-width: 100%;
+  max-width: 100%;
 }
