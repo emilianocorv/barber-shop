@@ -42,10 +42,10 @@
           <ul class="nav nav-pills main-font responsive-font fw-lighter">
             <li class="nav-item">
               <a
-                href="index.php"
+                href="login.php"
                 class="nav-link text-white links-hover"
                 aria-current="page"
-                >Inicio</a
+                >Login</a
               >
             </li>
             <li class="nav-item">

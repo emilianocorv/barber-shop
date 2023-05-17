@@ -63,7 +63,7 @@
             <div class="col-6">
                 <div class="form-group">
                     <label class="control-label">Fecha</label>
-                    <input class="form-control required" type="date" placeholder="DD/MM/AAAA" id="fecha" name="fecha" value="">
+                    <input type="date" name="fecha" id="fecha" placeholder="DD/MM/AAAA" class="form-control required" min=<?php $hoy=date("Y-m-d"); echo $hoy;?>>
                 </div>
             </div>
             <div class="col">
