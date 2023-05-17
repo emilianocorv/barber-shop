@@ -55,12 +55,12 @@
               <a href="turnos.php" class="nav-link text-white links-hover">Turnos</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-white links-hover"
+              <a href="trabajos.php" class="nav-link text-white links-hover"
                 >Nuestros trabajos</a
               >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-white links-hover">Contacto</a>
+              <a href="contacto.php" class="nav-link text-white links-hover">Contacto</a>
             </li>
           </ul>
         </header>

@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 
 <section class="first container-fluid d-flex flex-column text-white p-4">
-
+    <div class="container w-50">
     <div class="px-4">
         <h4 class="mt-4">Turnos</h4>
         <h6>Completa el siguiente formulario para reservar tu turno</h6>
@@ -15,11 +15,11 @@
                 <div class="form-group">
                     <label class="control-label text-white">Teléfono celular</label>
                         <div class="input-group">
-                            <div class="input-group-prepend">
+                            <div class="input-group-prepend m-1">
                                     <span class="input-group-text">+54</span>
                             </div>
-                            <input class="form-control required" type="tel" placeholder="Cód area" name="codArea" id="codArea" value="11" minlength="2" maxlength="4">
-                            <input class="form-control required" type="tel" placeholder="XXXXXXXX" maxlength="8" minlength="5" id="campoValidacion">
+                            <input class="form-control required m-1" type="tel" placeholder="Cód area" name="codArea" id="codArea" value="11" minlength="2" maxlength="4">
+                            <input class="form-control required m-1" type="tel" placeholder="XXXXXXXX" maxlength="8" minlength="5" id="campoValidacion">
                         </div>
                      <small>Sin 0 ni 15. Ingrese sólo números.</small>
                 </div>
@@ -27,8 +27,8 @@
         </div>
 
         <div class="row px-4 my-2">
-            <hr class="my-2">
-            <div class="col">
+            
+            <div class="col my-1">
                 <h4>Reserva</h4>
             </div>
         </div>
@@ -102,7 +102,7 @@
         </div>
         
     </form>
-    
+    </div>
 </section>
 
 
