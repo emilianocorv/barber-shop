@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 
-<section class="first container-fluid d-flex flex-column text-white p-4">
-    <div class="container w-50">
+<section class="first container-fluid d-flex justify-content-center text-light">
+    <div class="col-12 col-md-8 col-lg-6 col-xl-6">
     <div class="px-4">
         <h4 class="mt-4">Turnos</h4>
         <h6>Completa el siguiente formulario para reservar tu turno</h6>

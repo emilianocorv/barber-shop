@@ -18,7 +18,7 @@
 
         <div class="d-grid col-12 mx-auto">
             <button type="submit" class="btn btn-primary btn-lg my-4">Iniciar sesión</button>
-            <button type="button" class="btn btn-dark btn-lg">Registrate</button>
+            <a href="registrate.php" class="btn btn-dark btn-lg">Registrate</a>
         </div>
         </form>
         </div>
