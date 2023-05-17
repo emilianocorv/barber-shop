@@ -22,7 +22,6 @@
         </div>
         </form>
         </div>
-    
 </section>
 
 <?php include('footer.php');?>
