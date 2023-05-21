@@ -5,7 +5,8 @@
   background-color: #121519;
 }
 
-body, #background {
+body,
+#background {
   background-color: #121519;
 }
 
@@ -35,12 +36,6 @@ html {
   background-color: #121519;
 }
 
-.cont {
-  height: 100vh;
-  background-color: lightskyblue;
-  border: 1px solid white;
-}
-
 .first {
   margin-top: 110px;
 }
@@ -58,7 +53,7 @@ html {
 
 /* Turnos */
 
-label{
+label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
@@ -66,10 +61,11 @@ label{
 
 /* Footer */
 
-footer {
-  position: fixed;
+#footer {
+  position: sticky;
   left: 0;
   bottom: 0;
   min-width: 100%;
   max-width: 100%;
+  opacity: 0.9;
 }

@@ -1,6 +1,6 @@
 <?php include 'header.php'; ?>
 
-<section class="first container-fluid d-flex justify-content-center text-light">
+<section class="first main-font container-fluid d-flex justify-content-center text-light">
     <div class="col-12 col-md-8 col-lg-6 col-xl-6">
     <div class="px-4">
         <h4 class="mt-4">Turnos</h4>
