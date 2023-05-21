@@ -1,8 +1,8 @@
 <?php
-$host = "sql100.epizy.com";
-$user = "epiz_34145479";
-$pass = "Tef9OmTGFEf";
-$db = "epiz_34145479_barberia";
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db = "barberia";
 
 $conn = new mysqli ( $host, $user , $pass , $db);
 

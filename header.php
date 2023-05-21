@@ -38,16 +38,29 @@
               />Barber Shop
             </h1></a
           >
-
+          
           <ul class="nav nav-pills main-font responsive-font fw-lighter">
-            <li class="nav-item">
+            <?php 
+            if ($_SERVER['REQUEST_URI'] === '/barber-shop/index.php') {?>
+              <li class="nav-item">
+              <a
+                href="login.php"
+                class="nav-link text-white links-hover"
+                aria-current="page"
+                >Login</a>
+              </li>
+            <?php }
+            else{?>
+              <li class="nav-item">
               <a
                 href="index.php"
                 class="nav-link text-white links-hover"
                 aria-current="page"
-                >Inicio</a
-              >
-            </li>
+                >Inicio</a>
+              </li><?php
+            }
+            ?>
+            
             <li class="nav-item">
               <a href="servicios.php" class="nav-link text-white links-hover">Servicios</a>
             </li>
@@ -55,12 +68,12 @@
               <a href="turnos.php" class="nav-link text-white links-hover">Turnos</a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-white links-hover"
+              <a href="trabajos.php" class="nav-link text-white links-hover"
                 >Nuestros trabajos</a
               >
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link text-white links-hover">Contacto</a>
+              <a href="contacto.php" class="nav-link text-white links-hover">Contacto</a>
             </li>
           </ul>
         </header>

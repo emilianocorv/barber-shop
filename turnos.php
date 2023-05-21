@@ -1,7 +1,7 @@
 <?php include 'header.php'; ?>
 
-<section class="first container-fluid d-flex flex-column text-white p-4">
-
+<section class="first main-font container-fluid d-flex justify-content-center text-light">
+    <div class="col-12 col-md-8 col-lg-6 col-xl-6">
     <div class="px-4">
         <h4 class="mt-4">Turnos</h4>
         <h6>Completa el siguiente formulario para reservar tu turno</h6>
@@ -15,11 +15,11 @@
                 <div class="form-group">
                     <label class="control-label text-white">Teléfono celular</label>
                         <div class="input-group">
-                            <div class="input-group-prepend">
+                            <div class="input-group-prepend m-1">
                                     <span class="input-group-text">+54</span>
                             </div>
-                            <input class="form-control required" type="tel" placeholder="Cód area" name="codArea" id="codArea" value="11" minlength="2" maxlength="4">
-                            <input class="form-control required" type="tel" placeholder="XXXXXXXX" maxlength="8" minlength="5" id="campoValidacion">
+                            <input class="form-control required m-1" type="tel" placeholder="Cód area" name="codArea" id="codArea" value="11" minlength="2" maxlength="4">
+                            <input class="form-control required m-1" type="tel" placeholder="XXXXXXXX" maxlength="8" minlength="5" id="campoValidacion">
                         </div>
                      <small>Sin 0 ni 15. Ingrese sólo números.</small>
                 </div>
@@ -27,8 +27,8 @@
         </div>
 
         <div class="row px-4 my-2">
-            <hr class="my-2">
-            <div class="col">
+            
+            <div class="col my-1">
                 <h4>Reserva</h4>
             </div>
         </div>
@@ -63,7 +63,7 @@
             <div class="col-6">
                 <div class="form-group">
                     <label class="control-label">Fecha</label>
-                    <input class="form-control required" type="date" placeholder="DD/MM/AAAA" id="fecha" name="fecha" value="">
+                    <input type="date" name="fecha" id="fecha" placeholder="DD/MM/AAAA" class="form-control required" min=<?php $hoy=date("Y-m-d"); echo $hoy;?>>
                 </div>
             </div>
             <div class="col">
@@ -102,7 +102,7 @@
         </div>
         
     </form>
-    
+    </div>
 </section>
 
 
