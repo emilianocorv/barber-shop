@@ -1,6 +1,6 @@
 <?php include('header.php')?>
 
-<section class="first container-fluid text-white d-flex justify-content-center">
+<section class="first main-font container-fluid text-white d-flex justify-content-center">
     
         <div class="px-4 col-12 col-md-6 col-lg-6 col-xl-4">
          <h3 class="mt-4 text-center">Iniciar sesión</h3>

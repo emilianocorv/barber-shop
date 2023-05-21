@@ -1,6 +1,6 @@
 <?php include('header.php')?>
 
-<section class="first container-fluid text-white d-flex justify-content-center">
+<section class="first main-font container-fluid text-white d-flex justify-content-center">
     <div class="col-12 col-md-8 col-lg-6 col-xl-6">
         <div class="px-4">
             <h4 class="mt-4">Comunicate con nosotros</h4>

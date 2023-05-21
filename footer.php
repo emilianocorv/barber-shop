@@ -1,5 +1,5 @@
-<footer class="">
-      <p class="text-light h6">Corvalan - Barzizza - Limachi - IFTS4</p>
+<footer class="footer text-center" id="footer">
+      <p class="text-light h6">Corvalan - Barzizza - Limachi</p>
     </footer>
 
 
