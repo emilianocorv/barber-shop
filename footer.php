@@ -1,7 +1,3 @@
-<footer class="footer text-center" id="footer">
-      <p class="text-light h6">Corvalan - Barzizza - Limachi</p>
-    </footer>
-
 
     <script src="script.js"></script>
     <script

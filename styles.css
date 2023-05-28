@@ -58,14 +58,3 @@ label {
   margin-bottom: 5px;
   font-weight: bold;
 }
-
-/* Footer */
-
-#footer {
-  position: sticky;
-  left: 0;
-  bottom: 0;
-  min-width: 100%;
-  max-width: 100%;
-  opacity: 0.9;
-}
