@@ -8,20 +8,20 @@
         <form>
         <div class="form-group my-2">
         <label for="nombre">Nombre</label>
-        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
         </div>
 
         <div class="form-group my-2">
         <label for="apellido">Apellido</label>
-        <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingrese su apellido">
+        <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
         </div>
 
         <div class="form-group my-2">
         <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su email">
+        <input type="email" class="form-control" id="email" name="mail" placeholder="Ingrese su email" required>
         </div>
 
-        <div class="form-group my-2">
+    <!--       <div class="form-group my-2">
         <label for="telefono">Telefono</label>
         <div class="input-group">
             <div class="input-group-prepend m-1">
@@ -31,19 +31,15 @@
             <input class="form-control required m-1" type="tel" placeholder="XXXXXXXX" maxlength="8" minlength="5" id="campoValidacion">
         </div>
         </div>
-
-        <div class="form-group my-2">
-        <label for="nombre">Usuario</label>
-        <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Elegí tu usuario para ingresar">
-        </div>
+    -->
 
         <div class="form-group my-2">
             <label for="password">Contraseña</label>
-            <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+            <input type="password" class="form-control" id="password" name="password" placeholder="Ingrese su contraseña" required>
         </div>
 
         <div class="d-grid col-12 mx-auto">
-            <button type="submit" class="btn btn-primary btn-lg my-4">Registrate</button>
+            <input type="submit" class="btn btn-primary btn-lg my-4" value="Registrate">
             <a href="login.php" class="btn btn-dark btn-lg">Volver al inicio de sesion</a>
         </div>
         </form>
