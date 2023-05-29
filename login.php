@@ -2,26 +2,32 @@
 
 <section class="first main-font container-fluid text-white d-flex justify-content-center">
     
-        <div class="px-4 col-12 col-md-6 col-lg-6 col-xl-4">
-         <h3 class="mt-4 text-center">Iniciar sesión</h3>
+    <div class="px-4 col-12 col-md-6 col-lg-6 col-xl-4">
+        <h3 class="mt-4 text-center">Iniciar sesión</h3>
 
-        <form>
+        <form method="POST" action="">
+
         <div class="form-group my-2">
-        <label for="nombre">Usuario</label>
-        <input type="text" class="form-control" id="usuario" name="usuario" placeholder="Ingrese su usuario">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su email">
         </div>
 
         <div class="form-group my-2">
             <label for="apellido">Contraseña</label>
-            <input type="password" class="form-control" id="apellido" placeholder="Ingrese su contraseña">
+            <input type="password" class="form-control" id="apellido" name="password" placeholder="Ingrese su contraseña">
         </div>
 
+        <?php
+        include("conexion.php");
+        include("controlador.php");
+        ?>
+
         <div class="d-grid col-12 mx-auto">
-            <button type="submit" class="btn btn-primary btn-lg my-4">Iniciar sesión</button>
+            <input type="submit" name="btnLogin" class="btn btn-primary btn-lg my-4" value="Iniciar sesion">
             <a href="registrate.php" class="btn btn-dark btn-lg">Registrate</a>
         </div>
         </form>
-        </div>
+    </div>
 </section>
 
 <?php include('footer.php');?>
