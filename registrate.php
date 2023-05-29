@@ -5,20 +5,20 @@
         <div class="px-4 col-12 col-md-6 col-lg-6 col-xl-4">
          <h3 class="mt-4 text-center">Registrate</h3>
 
-        <form>
+        <form method="POST">
         <div class="form-group my-2">
         <label for="nombre">Nombre</label>
-        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingrese su nombre">
         </div>
 
         <div class="form-group my-2">
         <label for="apellido">Apellido</label>
-        <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
+        <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Ingrese su apellido">
         </div>
 
         <div class="form-group my-2">
         <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" name="mail" placeholder="Ingrese su email" required>
+        <input type="email" class="form-control" id="email" name="mail" placeholder="Ingrese su email">
         </div>
 
     <!--       <div class="form-group my-2">
@@ -35,11 +35,16 @@
 
         <div class="form-group my-2">
             <label for="password">Contraseña</label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="Ingrese su contraseña" required>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Ingrese su contraseña">
         </div>
 
+        <?php
+        include("conexion.php");
+        include("controlador/controlador-registro.php");
+        ?>
+
         <div class="d-grid col-12 mx-auto">
-            <input type="submit" class="btn btn-primary btn-lg my-4" value="Registrate">
+            <input type="submit" class="btn btn-primary btn-lg my-4" value="Registrate" name="btnRegistro">
             <a href="login.php" class="btn btn-dark btn-lg">Volver al inicio de sesion</a>
         </div>
         </form>
