@@ -15,6 +15,6 @@ if(!empty($_POST["btnLogin"])){
             echo '<div class="alert alert-danger mt-4">Email o contraseña incorrectos</div>';
         }
         }
-    }
+}
 
 ?>
