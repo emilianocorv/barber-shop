@@ -3,7 +3,7 @@
 if(!empty($_POST['btnRegistro'])){
     if (empty($_POST['nombre']) or
         empty($_POST['apellido']) or
-        empty($_POST['mail']) or
+        empty($_POST['email']) or
         empty($_POST['password']))
         {
         echo '<div class="alert alert-danger mt-4">Uno o mas campos estan vacios</div>';
@@ -11,11 +11,17 @@ if(!empty($_POST['btnRegistro'])){
     else{
         $nombre = $_POST['nombre'];
         $apellido = $_POST['apellido'];
-        $mail = $_POST['mail'];
+        $email = $_POST['email'];
         $password = $_POST['password'];
-
-        $query = $conn->query("INSERT INTO usuarios (nombre,apellido,mail,pass) VALUES ('$nombre','$apellido','$mail','$password')");
-
+        $pass_cifrado = hash ('sha256',$password.$email);
+        try {
+            $query = $conn->query("INSERT INTO usuarios (nombre,apellido,mail,pass) VALUES ('$nombre','$apellido','$email','$pass_cifrado')");
+        } catch (Exception $e){
+            echo '<div class="alert alert-danger mt-4"> Error al insertar usuario, email ya registrado. </div>'; 
+            print "<script>window.setTimeout(function() { window.location = 'registrate.php' }, 3000);</script>";
+            //header("Location: ../registrate.php");
+            exit();
+        }
         if ($query == 1){
             echo '<div class="alert alert-success mt-4">Usuario registrado correctamente. Puede iniciar sesion</div>'; 
         }

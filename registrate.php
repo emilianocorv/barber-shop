@@ -18,7 +18,7 @@
 
         <div class="form-group my-2">
         <label for="email">Email</label>
-        <input type="email" class="form-control" id="email" name="mail" placeholder="Ingrese su email">
+        <input type="email" class="form-control" id="email" name="email" placeholder="Ingrese su email">
         </div>
 
     <!--       <div class="form-group my-2">

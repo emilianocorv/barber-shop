@@ -7,7 +7,8 @@ if(!empty($_POST["btnLogin"])){
     else{
         $email = $_POST["email"];
         $password = $_POST["password"];
-        $query = $conn->query("SELECT * FROM usuarios WHERE mail='$email' and pass='$password'");
+        $pass_cifrado = hash('sha256',$password.$email);
+        $query = $conn->query("SELECT * FROM usuarios WHERE mail='$email' and pass='$pass_cifrado'");
         if ($datos = $query->fetch_object()){
             header("location:turnos.php");
         }
