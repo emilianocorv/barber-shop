@@ -1,4 +1,7 @@
-<?php include('header.php')?>
+<?php
+    session_start();
+    include('header.php')
+?>
 
 <section class="first container-fluid text-white d-flex justify-content-center">
     

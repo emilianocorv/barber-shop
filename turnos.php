@@ -1,4 +1,9 @@
-<?php include 'header.php'; ?>
+<?php 
+    session_start();
+    include 'header.php'; 
+    if (isset($_SESSION['email'])){ 
+        include 'conexion.php';
+    ?>
 
 <section class="first main-font container-fluid d-flex justify-content-center text-light">
     <div class="col-12 col-md-8 col-lg-6 col-xl-6">
@@ -68,7 +73,7 @@
             </div>
             <div class="col">
                 <div class="form-group">
-                    <label class="control-label">Hora</label>
+                    <label class="control-label">Hora</label><!--ESTO SE PUEDE COMPLETAR CON UN CICLO FOR DE PHP????-->
                     <select id="horas" name="horas" class="form-control required">
                         <option value="10:00" class="bg-light">10:00</option>
                         <option value="10:30" class="bg-light">10:30</option>
@@ -104,6 +109,9 @@
     </form>
     </div>
 </section>
-
-
-<?php include 'footer.php'; ?>
+<?php 
+print_r($_SESSION); //PRUEBA DE DATOS, BORRAR
+} else {
+    header("location:login.php");
+}
+include 'footer.php'; ?>
