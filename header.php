@@ -25,6 +25,7 @@
   </head>
   <body>
     <header>
+      <?php error_reporting(0) //Se desactivan los warnings, notice y errors de php?> 
       <div class="container">
         <header class="d-flex flex-wrap justify-content-center header-fix">
           <a
@@ -74,6 +75,9 @@
             </li>
             <li class="nav-item">
               <a href="contacto.php" class="nav-link text-white links-hover">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a href="logout.php" class="nav-link text-white links-hover">Logout</a>
             </li>
           </ul>
         </header>
