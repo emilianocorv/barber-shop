@@ -18,7 +18,17 @@
               clientes satisfechos y experimenta la diferencia.
             </p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <a href="turnos.php" class="btn btn-primary btn-lg px-4 me-md-2">Reserva tu turno</a>
+
+              <?php 
+              if ($_SESSION['loggedin']==true){
+                echo '<a href="turnos.php" class="btn btn-primary btn-lg px-4 me-md-2">Reserva tu turno</a>';
+              }
+              else{
+                echo '<a href="login.php" class="btn btn-primary btn-lg px-4 me-md-2">Iniciar sesión</a>';
+              }
+              ?>
+
+
               <button
                 type="button"
                 class="btn btn-outline-secondary btn-lg px-4"
