@@ -42,8 +42,8 @@
         </div>
 
         <?php
-        include("conexion.php");
-        include("controlador/controlador-registro.php");
+            include("conexion.php");
+            include("controlador/controlador-registro.php");
         ?>
 
         <div class="d-grid col-12 mx-auto">
