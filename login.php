@@ -1,4 +1,6 @@
-<?php include('header.php')?>
+<?php include('header.php');
+      include("conexion.php");
+?>
 
 <section class="first main-font container-fluid text-white d-flex justify-content-center">
     
@@ -18,7 +20,6 @@
         </div>
 
         <?php
-        include("conexion.php");
         include("controlador/controlador-login.php");
         ?>
 

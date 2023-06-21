@@ -25,7 +25,8 @@
   </head>
   <body>
     <header>
-      <?php error_reporting(0) //Se desactivan los warnings, notice y errors de php?> 
+      <?php error_reporting(0); //Se desactivan los warnings, notice y errors de php
+      session_start();?> 
       <div class="container">
         <header class="d-flex flex-wrap justify-content-center header-fix">
           <a
