@@ -8,7 +8,9 @@
 <section class="first main-font container-fluid d-flex justify-content-center text-light">
     <div class="col-12 col-md-8 col-lg-6 col-xl-6">
     <div class="px-4">
-        <h4 class="mt-4">Turnos</h4>
+        <?php 
+        echo '<h4 class="mt-4">Bienvenido '. ucfirst($_SESSION['nombre']). '</h4>';
+        ?>
         <h6>Completa el siguiente formulario para reservar tu turno</h6>
         <hr>
     </div>
@@ -115,7 +117,7 @@
     </div>
 </section>
 <?php 
-print_r($_SESSION); //PRUEBA DE DATOS, BORRAR
+//print_r($_SESSION); //PRUEBA DE DATOS, BORRAR
 } else {
     header("location:login.php");
 }
