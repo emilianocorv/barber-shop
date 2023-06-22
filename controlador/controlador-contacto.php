@@ -19,7 +19,7 @@ if(!empty($_POST['btnContacto'])){
             echo '<div class="alert alert-danger mt-4">Error al enviar comentarios, intente nuevamente</div>';
         }
         if ($query == 1){
-            echo '<div class="alert alert-success mt-4">La consulta se emvio correctamente</div>';
+            echo '<div class="alert alert-success mt-4">La consulta se envió correctamente</div>';
             print "<script>window.setTimeout(function() { window.location = 'index.php' }, 3000);</script>";
         }
     }

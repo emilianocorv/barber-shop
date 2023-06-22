@@ -6,10 +6,10 @@ $query = $conn->query("SELECT * FROM turnos");
 ?>
 <section class="first main-font container-fluid text-white d-flex justify-content-center">
 
-    <div class="px-4 col-12 col-md-10 col-lg-10 col-xl-10">
-        <h3 class="mt-4 text-center">ESTO ES EL REGISTRO TURNOS</h3>    
+    <div class="container px-4 col-12 col-md-10 col-lg-10 col-xl-10">
+        <h3 class="m-4 text-center text-white">Turnos solicitados</h3>    
         <div>
-            <table class="table table-success table-striped">
+            <table class="table table-dark table-striped table-hover">
                 <thead>
                     <td>Hora</td>
                     <td>Email</td>
