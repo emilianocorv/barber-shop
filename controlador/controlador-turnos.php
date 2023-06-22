@@ -6,8 +6,8 @@ if(!empty($_POST['btnTurno'])){
         empty($_POST['fecha']) or
         empty($_POST['horas']))
         {
-        echo '<div class="alert alert-danger mt-4">Uno o mas campos estan vacios</div>';
-        print_r($_POST);
+        echo '<div class="alert alert-danger container mt-4">Uno o mas campos estan vacios</div>';
+        //print_r($_POST);
 
     } else {//(fecha,time,mail,idServicio,cod_area,telefono)
         $fecha = $_POST['fecha'];
@@ -20,7 +20,9 @@ if(!empty($_POST['btnTurno'])){
             //echo 'entramos al try';
             //print_r($_POST);
             $query = $conn->query ("INSERT INTO turnos (fecha,time,mail,idservicio,cod_area,telefono) VALUES ('$fecha','$time','$email','$idservicio','$cod_area','$telefono')");
-            //echo 'termino la query';
+            echo '<script>
+                    alert("Su turno fue gestionado correctamente. Muchas gracias!")
+                  </script>';
         } catch (Exception $e){
             echo  $e->getMessage();
             echo '<div class="alert alert-danger mt-4">Error al seleccionar el turno</div>';
