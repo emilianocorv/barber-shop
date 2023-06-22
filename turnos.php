@@ -107,7 +107,7 @@
 
         <div class="row p-4 my-2">
             <div class="col">
-                <input type="submit" class="btn btn-primary d-block mx-auto " value=" onfirmar turno" name="btnTurno">
+                <input type="submit" class="btn btn-primary d-block mx-auto " value="Confirmar turno" name="btnTurno">
             </div>
         </div>
         

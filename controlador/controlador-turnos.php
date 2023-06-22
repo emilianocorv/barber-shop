@@ -17,10 +17,10 @@ if(!empty($_POST['btnTurno'])){
         $cod_area = $_POST['codArea'];
         $telefono = $_POST['telefono'];
         try {
-            echo 'entramos al try';
-            print_r($_POST);
+            //echo 'entramos al try';
+            //print_r($_POST);
             $query = $conn->query ("INSERT INTO turnos (fecha,time,mail,idservicio,cod_area,telefono) VALUES ('$fecha','$time','$email','$idservicio','$cod_area','$telefono')");
-            echo 'termino la query';
+            //echo 'termino la query';
         } catch (Exception $e){
             echo  $e->getMessage();
             echo '<div class="alert alert-danger mt-4">Error al seleccionar el turno</div>';
