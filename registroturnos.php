@@ -11,12 +11,14 @@ $query = $conn->query("SELECT * FROM turnos");
         <div>
             <table class="table table-dark table-hover">
                 <thead>
-                    <td>Hora</td>
-                    <td>Email</td>
-                    <td>Servicio</td>
-                    <td>Codigo de area</td>
-                    <td>Telefono</td>
-                    <td>Acciones</td>
+                    <tr>
+                    <td scope="col">Hora</td>
+                    <td scope="col">Email</td>
+                    <td scope="col">Servicio</td>
+                    <td scope="col">Codigo de area</td>
+                    <td scope="col">Telefono</td>
+                    <td scope="col">Acciones</td>
+                    </tr>
                 </thead>
                 <tbody>
                     <?php
@@ -28,8 +30,8 @@ $query = $conn->query("SELECT * FROM turnos");
                                 <td>".$fila['cod_area']."</td>
                                 <td>".$fila['telefono'].'</td>
                                 <td><div class="d-flex justify-content-center bg-dark text-white">
-                                        <a href="#" class="mx-2 link-primary bg-dark"><i class="bi bi-pencil-fill"></i></a>
-                                        <a href="#" class="mx-2 link-danger bg-dark"><i class="bi bi-trash icon"></i></a>
+                                        <a href="#" class="mx-2 link-primary bg-dark"><i class="bi bi-pencil-fill bg-dark"></i></a>
+                                        <a href="#" class="mx-2 link-danger bg-dark"><i class="bi bi-trash icon bg-dark"></i></a>
                                     </div>
                                 </td>
                             </tr>';
