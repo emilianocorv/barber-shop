@@ -6,15 +6,35 @@ $query = $conn->query("SELECT * FROM turnos");
 ?>
 <section class="first main-font container-fluid text-white d-flex justify-content-center">
 
-    <div class="px-4 col-12 col-md-6 col-lg-6 col-xl-4">
-        <h3 class="mt-4 text-center">ESTO ES EL REGISTRO TURNOS</h3>
-    </div>
-    <div>
-        <?php
-            while ($fila = mysqli_fetch_array($query)){
-                echo "vamos que funca";
-            }
-        ?>
+    <div class="px-4 col-12 col-md-10 col-lg-10 col-xl-10">
+        <h3 class="mt-4 text-center">ESTO ES EL REGISTRO TURNOS</h3>    
+        <div>
+            <table class="table table-success table-striped">
+                <thead>
+                    <td>Hora</td>
+                    <td>Email</td>
+                    <td>Servicio</td>
+                    <td>Codigo de area</td>
+                    <td>Telefono</td>
+                    <td></td>
+                </thead>
+                <tbody>
+                    <?php
+                        while ($fila = mysqli_fetch_array($query)){
+                            echo "<tr>
+                                <td>".$fila['time']."</td>
+                                <td>".$fila['mail']."</td>
+                                <td>".$fila['idservicio']."</td>
+                                <td>".$fila['cod_area']."</td>
+                                <td>".$fila['telefono']."</td>
+                                <td>muchos botones</td>
+                            </tr>";
+                        }
+                    ?>  
+                </tbody>
+                
+            </table>
+        </div>
     </div>
 </section>
 <?php include('footer.php');?>
