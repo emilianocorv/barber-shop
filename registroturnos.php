@@ -9,14 +9,14 @@ $query = $conn->query("SELECT * FROM turnos");
     <div class="container px-4 col-12 col-md-10 col-lg-10 col-xl-10">
         <h3 class="m-4 text-center text-white">Turnos solicitados</h3>    
         <div>
-            <table class="table table-dark table-striped table-hover">
+            <table class="table table-dark table-hover">
                 <thead>
                     <td>Hora</td>
                     <td>Email</td>
                     <td>Servicio</td>
                     <td>Codigo de area</td>
                     <td>Telefono</td>
-                    <td></td>
+                    <td>Acciones</td>
                 </thead>
                 <tbody>
                     <?php
@@ -26,9 +26,13 @@ $query = $conn->query("SELECT * FROM turnos");
                                 <td>".$fila['mail']."</td>
                                 <td>".$fila['idservicio']."</td>
                                 <td>".$fila['cod_area']."</td>
-                                <td>".$fila['telefono']."</td>
-                                <td>muchos botones</td>
-                            </tr>";
+                                <td>".$fila['telefono'].'</td>
+                                <td><div class="d-flex justify-content-center bg-dark text-white">
+                                        <a href="#" class="mx-2 link-primary bg-dark"><i class="bi bi-pencil-fill"></i></a>
+                                        <a href="#" class="mx-2 link-danger bg-dark"><i class="bi bi-trash icon"></i></a>
+                                    </div>
+                                </td>
+                            </tr>';
                         }
                     ?>  
                 </tbody>
